@@ -1,5 +1,8 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './assets/style/reset.css'
+import './assets/style/common.css'
+
 import Home from "./components/Home";
 import Step1 from "./components/Step1";
 import Step2 from "./components/Step2";
@@ -11,17 +14,19 @@ import NotFound from "./components/NotFound.js";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter>
-        <Routes>
-          <Route path={`*`} element={<NotFound />} />
-          <Route path={`/`} element={<Home />} />
-          <Route path={`/step1/`} element={<Step1 />} />
-          <Route path={`/step2/`} element={<Step2 />} />
-          <Route path={`/step3/`} element={<Step3 />} />
-          <Route path={`/generate/`} element={<Generate />} />
-          <Route path={`/complete/`} element={<Complete />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="main">
+        <BrowserRouter>
+          <Routes>
+            <Route path={`*`} element={<NotFound />} />
+            <Route path={`/`} element={<Home />} />
+            <Route path={`/step1/`} element={<Step1 />} />
+            <Route path={`/step2/`} element={<Step2 />} />
+            <Route path={`/step3/`} element={<Step3 />} />
+            <Route path={`/generate/`} element={<Generate />} />
+            <Route path={`/complete/`} element={<Complete />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     );
   }
 }

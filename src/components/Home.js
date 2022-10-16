@@ -1,10 +1,14 @@
 import React from "react";
+import Modal1 from "./modal/Modal1";
 
 class Home extends React.Component {
   render() {
     return (
       <>
-        <h1>Hello React From Home</h1>
+        <div className="title">
+          <h1>AI.Pic</h1>
+        </div>
+        <Modal1 />
       </>
     );
   }
