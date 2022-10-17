@@ -1,4 +1,5 @@
 import React from "react";
+import SelectImgs from "../images/Select"
 
 class Modal2 extends React.Component {
   render() {
@@ -12,6 +13,7 @@ class Modal2 extends React.Component {
             <p className="mt8 fs12">４枚のうち、１枚選んでください</p>
             <p className="mt16 fs12">?/3</p>
           </div>
+          <SelectImgs />
           <div className="selecting">
 
           </div>
