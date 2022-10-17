@@ -1,10 +1,11 @@
 import React from "react";
+import Modal2 from "./modal/Modal2";
 
 class Step2 extends React.Component {
   render() {
     return (
       <>
-        <h1>Hello React From Step2</h1>
+        <Modal2 />
       </>
     );
   }
