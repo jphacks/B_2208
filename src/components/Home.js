@@ -6,7 +6,7 @@ class Home extends React.Component {
     return (
       <>
         <div className="title">
-          <h1>AI.Pic</h1>
+          <h1>AI.pic</h1>
         </div>
         <Modal1 />
       </>
