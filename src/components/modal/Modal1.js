@@ -12,7 +12,7 @@ class Modal1 extends React.Component {
             <h2>部屋の写真を撮る</h2>
             <p className="mt8 fs12">飾りたい場所を引き目で撮影してください</p>
           </div>
-          <div className="btn-camera mt24">
+          <div className="btn btn-camera mt24">
             <img src={iconCamera} alt="camera icon" className="icon-camera" />
             <p className="fs16">画像のアップロード</p>
           </div>
