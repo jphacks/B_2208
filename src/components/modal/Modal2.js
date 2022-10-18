@@ -14,9 +14,6 @@ class Modal2 extends React.Component {
             <p className="mt16 fs12">?/3</p>
           </div>
           <SelectImgs />
-          <div className="selecting">
-
-          </div>
         </div>
       </>
     );

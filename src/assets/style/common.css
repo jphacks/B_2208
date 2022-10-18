@@ -71,7 +71,7 @@ h3 {
   padding: 32px 24px 24px;
 }
 
-.modal-2 {
+.modal-2, .modal-3 {
   position: absolute;
   top: 64px;
   padding-top: 32px;
@@ -89,7 +89,7 @@ h3 {
   margin: 8px min(calc((100% - 294px) / 2), calc((480px - 294px) / 2)) 64px;
 }
 
-.item {
+.item, .selected-img {
   width: 135px;
   height: 180px;
 }
@@ -102,10 +102,34 @@ h3 {
   margin-top: 32px;
 }
 
+.selected-imgs {
+  width: 280px;
+  height: 260px;
+  margin: 32px auto 64px;
+  position: relative;
+}
+
+.selected-img-1 {
+  position: absolute;
+  top: 60px;
+  transform: rotate(-15deg);
+}
+.selected-img-2 {
+  position: absolute;
+  left: 118px;
+  transform: rotate(-5deg);
+}
+.selected-img-3 {
+  position: absolute;
+  top: 80px;
+  left: 135px;
+  transform: rotate(10deg);
+}
+
 /* ボタン */
 
 .btn {
-  background: #c4c4c4;
+  background: #d9d9d9;
 }
 
 .btn-camera {
@@ -113,8 +137,16 @@ h3 {
   align-items: center;
   width: 248px;
   padding: 8px 24px;
-  background: #c4c4c4;
   border-radius: 24px;
+}
+
+.btn-create {
+  width: 144px;
+  position: absolute;
+  bottom: 64px;
+  left: calc(50vw - 72px);
+  padding: 4px 24px;
+  border-radius: 14px;
 }
 
 /* HOME */
