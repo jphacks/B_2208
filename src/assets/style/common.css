@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 h1,
 h2,
 h3,
@@ -141,12 +145,12 @@ h3 {
 }
 
 .btn-create {
-  width: 144px;
+  width: 180px;
   position: absolute;
   bottom: 64px;
-  left: calc(50vw - 72px);
-  padding: 4px 24px;
-  border-radius: 14px;
+  left: calc(50vw - 90px);
+  padding: 8px 24px;
+  border-radius: 17px;
 }
 
 /* HOME */

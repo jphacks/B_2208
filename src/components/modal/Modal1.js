@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import iconCamera from "../../assets/img/icon_camera.svg";
 
 class Modal1 extends React.Component {
@@ -14,7 +15,9 @@ class Modal1 extends React.Component {
           </div>
           <div className="btn btn-camera mt24">
             <img src={iconCamera} alt="camera icon" className="icon-camera" />
-            <p className="fs16">画像のアップロード</p>
+            <Link to={`/camera/`}>
+              <p className="fs16">画像のアップロード</p>
+            </Link>
           </div>
         </div>
       </>
