@@ -78,11 +78,19 @@ h3 {
 .modal-2, .modal-3 {
   position: absolute;
   top: 64px;
-  padding-top: 32px;
+  padding: 32px 24px 64px;
 }
 
-.explain {
-  margin: 32px auto 0;
+.modal-content {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+}
+
+.back-img {
+  position: absolute;
+  top: 102px;
+  left: 27px;
 }
 
 /* 画像 */
@@ -90,7 +98,7 @@ h3 {
 .select-imgs {
   display: flex;
   flex-wrap: wrap;
-  margin: 8px min(calc((100% - 294px) / 2), calc((480px - 294px) / 2)) 64px;
+  margin: 8px min(calc((100% - 294px) / 2), calc((480px - 294px) / 2)) 0;
 }
 
 .item, .selected-img {
@@ -103,13 +111,13 @@ h3 {
 }
 
 .item:nth-child(n+3) {
-  margin-top: 32px;
+  margin-top: 16px;
 }
 
 .selected-imgs {
   width: 280px;
   height: 260px;
-  margin: 32px auto 64px;
+  margin: 32px auto 0;
   position: relative;
 }
 
