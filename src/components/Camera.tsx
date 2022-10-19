@@ -5,7 +5,7 @@ import "./styles.css";
 const videoConstraints = {
   width: 360,
   height: 360,
-  facingMode: "user"
+  facingMode: "environment"
 };
 
 export const App = () => {
@@ -35,7 +35,7 @@ export const App = () => {
           <div>
             <Webcam
               audio={false}
-              width={540}
+              width={270}
               height={360}
               ref={webcamRef}
               screenshotFormat="image/jpeg"
