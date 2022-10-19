@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ProgressBar from "../ProgressBar";
 import iconCamera from "../../assets/img/icon_camera.svg";
 
 const Modal1 = () => {
@@ -7,8 +8,8 @@ const Modal1 = () => {
     <>
       <div className="modal modal-1">
         <h3>Step1</h3>
-        <div className="mt8"></div>
-        <div className="explain">
+        <ProgressBar step="1" />
+        <div className="explain mt32">
           <h2>部屋の写真を撮る</h2>
           <p className="mt8 fs12">飾りたい場所を引き目で撮影してください</p>
         </div>

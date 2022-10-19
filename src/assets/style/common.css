@@ -44,6 +44,10 @@ h3 {
   margin-top: 24px
 }
 
+.mt32 {
+  margin-top: 32px;
+}
+
 .main {
   width: 100vw;
   height: 100vh;
@@ -75,7 +79,8 @@ h3 {
   padding: 32px 24px 24px;
 }
 
-.modal-2, .modal-3 {
+.modal-2,
+.modal-3 {
   position: absolute;
   top: 64px;
   padding: 32px 24px 64px;
@@ -89,7 +94,6 @@ h3 {
 
 .back-img {
   position: absolute;
-  top: 102px;
   left: 27px;
 }
 
@@ -101,7 +105,8 @@ h3 {
   margin: 8px min(calc((100% - 294px) / 2), calc((480px - 294px) / 2)) 0;
 }
 
-.item, .selected-img {
+.item,
+.selected-img {
   width: 135px;
   height: 180px;
 }
@@ -126,11 +131,13 @@ h3 {
   top: 60px;
   transform: rotate(-15deg);
 }
+
 .selected-img-2 {
   position: absolute;
   left: 118px;
   transform: rotate(-5deg);
 }
+
 .selected-img-3 {
   position: absolute;
   top: 80px;
@@ -159,6 +166,41 @@ h3 {
   left: calc(50vw - 90px);
   padding: 8px 24px;
   border-radius: 17px;
+}
+
+/* バー */
+.bar {
+  position: relative;
+  margin-top: 8px;
+}
+
+.bar-back {
+  width: 295px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #EFEFEF;
+}
+
+.bar-step-1,
+.bar-step-2,
+.bar-step-3 {
+  position: absolute;
+  top: 0;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #E81515;
+}
+
+.bar-step-1 {
+  width: 59px;
+}
+
+.bar-step-2 {
+  width: 118px;
+}
+
+.bar-step-3 {
+  width: 295px;
 }
 
 /* HOME */
