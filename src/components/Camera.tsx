@@ -1,5 +1,6 @@
 import { useRef, useState, useCallback } from "react";
 import Webcam from "react-webcam";
+// import Canvas from "./Canvas/Canvas";
 import "./styles.css";
 
 const videoConstraints = {
@@ -8,7 +9,7 @@ const videoConstraints = {
   facingMode: "environment"
 };
 
-export const App = () => {
+export const Camera = () => {
   const [isCaptureEnable, setCaptureEnable] = useState<boolean>(false);
   const webcamRef = useRef<Webcam>(null);
   const [url, setUrl] = useState<string | null>(null);
@@ -24,6 +25,9 @@ export const App = () => {
       <header>
         <h2>カメラアプリ</h2>
       </header>
+      <div className="rect">
+        test
+      </div>
       {isCaptureEnable || (
         <button onClick={() => setCaptureEnable(true)}>開始</button>
       )}
@@ -65,4 +69,4 @@ export const App = () => {
   );
 };
 
-export default App;
+export default Camera;
