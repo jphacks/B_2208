@@ -12,25 +12,23 @@ import Generate from "./components/Generate";
 import Complete from "./components/Complete";
 import NotFound from "./components/NotFound.js";
 
-class App extends React.Component {
-  render() {
-    return (
-      <div className="main">
-        <BrowserRouter>
-          <Routes>
-            <Route path={`*`} element={<NotFound />} />
-            <Route path={`/`} element={<Home />} />
-            <Route path={`/step1/`} element={<Step1 />} />
-            <Route path={`/camera/`} element={<Camera />} />
-            <Route path={`/step2/`} element={<Step2 />} />
-            <Route path={`/step3/`} element={<Step3 />} />
-            <Route path={`/generate/`} element={<Generate />} />
-            <Route path={`/complete/`} element={<Complete />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
-    );
-  }
+const App = () => {
+  return (
+    <div className="main">
+      <BrowserRouter>
+        <Routes>
+          <Route path={`*`} element={<NotFound />} />
+          <Route path={`/`} element={<Home />} />
+          <Route path={`/step1/`} element={<Step1 />} />
+          <Route path={`/camera/`} element={<Camera />} />
+          <Route path={`/step2/`} element={<Step2 />} />
+          <Route path={`/step3/`} element={<Step3 />} />
+          <Route path={`/generate/`} element={<Generate />} />
+          <Route path={`/complete/`} element={<Complete />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
