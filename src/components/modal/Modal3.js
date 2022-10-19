@@ -1,7 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SelectedImgs from "../images/Selected";
-import backImg from "../../assets/img/back.svg"
+import ProgressBar from "../ProgressBar";
+import backImg from "../../assets/img/back.svg";
 
 const Modal3 = () => {
   return (
@@ -9,6 +10,7 @@ const Modal3 = () => {
       <div className="modal modal-3">
         <div className="modal-header">
           <h3>Step3</h3>
+          <ProgressBar step="3"/>
         </div>
         <div className="modal-content">
           <Link to={`/step2/`}>
