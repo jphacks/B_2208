@@ -1,7 +1,7 @@
 import { useRef, useState, useCallback } from "react";
 import Webcam from "react-webcam";
-// import Canvas from "./Canvas/Canvas";
 import "./styles.css";
+import styled from "styled-components";
 
 const videoConstraints = {
   width: 360,
@@ -19,15 +19,34 @@ export const Camera = () => {
       setUrl(imageSrc);
     }
   }, [webcamRef]);
+  
+  const CaptureButton = styled.button`
+    position: absolute;
+    width: 100px;
+    height: 1000px;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    margin: auto;
+  `;
+
+  const CaptureButton2 = styled.button`
+  position: absolute;
+  width: 100px;
+  height: 300px;
+  bottom: 30px;
+  right: 0;
+  left: 0;
+  margin: auto;
+`;
+
 
   return (
     <>
       <header>
         <h2>カメラアプリ</h2>
       </header>
-      <div className="rect">
-        test
-      </div>
+
       {isCaptureEnable || (
         <button onClick={() => setCaptureEnable(true)}>開始</button>
       )}
@@ -35,6 +54,7 @@ export const Camera = () => {
         <>
           <div>
             <button onClick={() => setCaptureEnable(false)}>終了</button>
+            <CaptureButton>***********</CaptureButton>
           </div>
           <div>
             <Webcam
@@ -59,6 +79,7 @@ export const Camera = () => {
             >
               削除
             </button>
+            <CaptureButton2>***********</CaptureButton2>
           </div>
           <div>
             <img src={url} alt="Screenshot" />

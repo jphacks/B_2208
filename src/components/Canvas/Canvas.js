@@ -12,7 +12,7 @@ const Canvas = () => {
 
   useEffect(() => {
     const ctx = getContext();
-    ctx.fillRect(0,0, 100, 100);
+    ctx.fillRect(0,0, 10, 10);
     ctx.save();
   })
 
