@@ -5,7 +5,7 @@ const ProgressBar = (prop) => {
     return (
       <>
         <div className="bar">
-          <div className="bar-back">{prop.step}</div>
+          <div className="bar-back"></div>
           <div className="bar-step-1"></div>
         </div>
       </>
