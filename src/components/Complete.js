@@ -15,6 +15,7 @@ const Complete = () => {
       )}
       {isGenerate && (
         <>
+          <img className="camera-area" src="" alt="" />
           <Link onClick={() => setGenerate(false)} to={`/complete/`} className='btn btn-create'>
             <p>再作成する</p>
           </Link>
