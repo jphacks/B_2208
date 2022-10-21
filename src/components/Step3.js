@@ -6,7 +6,7 @@ const Step3 = () => {
   return (
     <>
       <Modal3 />
-      <Link to={`/generate/`} className='btn btn-create'>
+      <Link to={`/complete/`} className='btn btn-create'>
         <p>絵を作成する</p>
       </Link>
     </>
