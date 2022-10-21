@@ -15,7 +15,7 @@ const Modal1 = () => {
         </div>
         <div className="btn btn-camera mt24">
           <img src={iconCamera} alt="camera icon" className="icon-camera" />
-          <Link to={`/camera/`}>
+          <Link to={`/takepic/`}>
             <p className="fs16">画像のアップロード</p>
           </Link>
         </div>
