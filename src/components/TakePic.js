@@ -31,26 +31,27 @@ const TakePic = () => {
     <>
       {isCaptureEnable || (
         <>
-          <div>
-            <img src={btnCancel} alt="" />
-          </div>
-          <div className="capture-img">
-            <img src={url} alt='Taken photo' />
+          <div className="main-camera">
             <div>
-              <Link to={`/step2/?maxCount=${maxCount}&selectCount=0&selectAns=0`}>
-                <p>進める</p>
-                <img src={btnGo} alt="" />
+              <img onClick={() => setCaptureEnable(true)} src={btnCancel} alt="" />
+            </div>
+            <div className="capture-img">
+              <img className="camera-area" src={url} alt='Taken photo' />
+              <Link className="go-area" to={`/step2/?maxCount=${maxCount}&selectCount=0&selectAns=0`}>
+                <p className="fs24 go-text">進める</p>
+                <img className="btn-go" src={btnGo} alt="" />
               </Link>
             </div>
           </div>
-          <button onClick={() => setCaptureEnable(true)}>開始</button>
         </>
       )}
       {isCaptureEnable && (
         <>
-          <div>
-            <Camera ref={camera} aspectRatio={9 / 16} />
-            <img src={btnCamera} alt="" onClick={takePhoto} />
+          <div className="main-camera">
+            <div className="camera-area">
+              <Camera ref={camera} facingMode='environment' aspectRatio={9 / 14} />
+            </div>
+            <img className="btn-photo" src={btnCamera} alt="" onClick={takePhoto} />
           </div>
         </>
       )}

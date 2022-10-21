@@ -32,6 +32,10 @@ h3 {
   font-size: 16px;
 }
 
+.fs24 {
+  font-size: 24px;
+}
+
 .mt8 {
   margin-top: 8px;
 }
@@ -95,6 +99,47 @@ h3 {
 .back-img {
   position: absolute;
   left: 27px;
+}
+
+/* カメラ */
+.main-camera {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: #000000;
+}
+.capture-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.camera-area {
+  width: calc(100vw - 12px);
+  height: calc(100vh - 126px);
+  margin: 6px 6px 0;
+  border-radius: 32px;
+}
+.go-area {
+  display: flex;
+  margin: 32px auto 24px;
+  justify-content: center;
+  padding: 16px 32px;
+}
+.go-area p {
+  color: #ffffff;
+}
+.btn-go {
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+}
+.btn-cancel {
+  display: absolute;
+}
+.btn-photo {
+  width: 80px;
+  height: 80px;
+  margin: 8px auto 32px;
 }
 
 /* 画像 */
