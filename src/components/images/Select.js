@@ -8,30 +8,23 @@ import greenPic from "../../assets/img/green.png";
 let step;
 const SelectImgs = () => {
   const [searchParams] = useSearchParams();
-  let select = 0;
-  for (const entry of searchParams.entries()) {
-    const [param, value] = entry;
-    console.log(param, value);
-    select++;
-  }
-  if (select <= 2) {
-    step = 2;
-  } else { 
-    step = 3;
-  }
+  const maxCount = Number(searchParams.get("maxCount"));
+  const selectCount = Number(searchParams.get("selectCount"));
+  const selectAns = Number(searchParams.get("selectAns"));
+  step = selectCount + 1 === maxCount ? 3 : 2;
   return (
     <>
       <div className="select-imgs">
-        <Link className="item" to={`/step${step}/?select${select}=1`} >
+        <Link className="item" to={`/step${step}/?maxCount=${maxCount}&selectCount=${selectCount + 1}&selectAns=${selectAns * 10 + 1}`} >
           <img src={redPic} alt="画像１" />
         </Link>
-        <Link className="item" to={`/step${step}/?select${select}=2`}>
+        <Link className="item" to={`/step${step}/?maxCount=${maxCount}&selectCount=${selectCount + 1}&selectAns=${selectAns * 10 + 2}`}>
           <img src={bluePic} alt="画像２" />
         </Link>
-        <Link className="item" to={`/step${step}/?select${select}=3`}>
+        <Link className="item" to={`/step${step}/?maxCount=${maxCount}&selectCount=${selectCount + 1}&selectAns=${selectAns * 10 + 3}`}>
           <img src={greenPic} alt="画像３" />
         </Link>
-        <Link className="item" to={`/step${step}/?select${select}=4`}>
+        <Link className="item" to={`/step${step}/?maxCount=${maxCount}&selectCount=${selectCount + 1}&selectAns=${selectAns * 10 + 4}`}>
           <img src={redPic} alt="画像４" />
         </Link>
       </div>
