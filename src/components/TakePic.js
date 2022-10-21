@@ -5,13 +5,6 @@ import btnCancel from "../assets/img/btn_cancel.svg";
 import btnCamera from "../assets/img/btn_camera.svg";
 import btnGo from "../assets/img/btn_go.svg";
 
-
-// const videoConstraints = {
-//   width: 390,
-//   height: 520,
-//   facingMode: "environment"
-// };
-
 const TakePic = () => {
   const [isCaptureEnable, setCaptureEnable] = useState(true);
   const camera = useRef(null);
@@ -36,7 +29,7 @@ const TakePic = () => {
               <img onClick={() => setCaptureEnable(true)} src={btnCancel} alt="" />
             </div>
             <div className="capture-img">
-              <img className="camera-area" src={url} alt='Taken photo' />
+              <img className="camera-area" src={url} alt='' />
               <Link className="go-area" to={`/step2/?maxCount=${maxCount}&selectCount=0&selectAns=0`}>
                 <p className="fs24 go-text">進める</p>
                 <img className="btn-go" src={btnGo} alt="" />
