@@ -213,6 +213,12 @@ h3 {
   border-radius: 17px;
 }
 
+.btn-cancel {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
 /* バー */
 .bar {
   position: relative;

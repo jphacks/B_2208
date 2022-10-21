@@ -32,7 +32,7 @@ const TakePic = () => {
       {isCaptureEnable || (
         <>
           <div className="main-camera">
-            <div>
+            <div className="btn-cancel">
               <img onClick={() => setCaptureEnable(true)} src={btnCancel} alt="" />
             </div>
             <div className="capture-img">
