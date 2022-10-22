@@ -1,10 +1,11 @@
 import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-const Complete = () => {
-  const [isGenerate, setGenerate] = useState(false);
-  const[posts, setPosts] = useState([])
+const Complete = (props) => {
+  const [isGenerate, setGenerate] = useState(true);
+  const [posts, setPosts] = useState([])
 
+  const url = props.url;
   useEffect(() => {
     fetch('https://google.com', { method: 'GET' })
       .then(res => res.json())
@@ -23,11 +24,11 @@ const Complete = () => {
             <p className="fs24">generating...</p>
             <div class="loader">Loading...</div>
           </div>
-        </>  
+        </>
       )}
       {isGenerate && (
         <>
-          <img className="camera-area" src="" alt="" />
+          <img className="camera-area" src={url} alt="" />
           <Link onClick={() => setGenerate(false)} to={`/complete/`} className='btn btn-create'>
             <p>再作成する</p>
           </Link>

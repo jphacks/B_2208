@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './assets/style/reset.css'
 import './assets/style/style.css'
@@ -11,16 +11,17 @@ import Complete from "./components/Complete";
 import NotFound from "./components/NotFound.js";
 
 const App = () => {
+  const [url, setUrl] = useState("");
   return (
     <div className="main">
       <BrowserRouter>
         <Routes>
           <Route path={`*`} element={<NotFound />} />
           <Route path={`/`} element={<Home />} />
-          <Route path={`/takepic/`} element={<TakePic />} />
+          <Route path={`/takepic/`} element={<TakePic setUrl={ setUrl } />} />
           <Route path={`/step2/`} element={<Step2 />} />
           <Route path={`/step3/`} element={<Step3 />} />
-          <Route path={`/complete/`} element={<Complete />} />
+          <Route path={`/complete/`} element={<Complete url={ url } />} />
         </Routes>
       </BrowserRouter>
     </div>

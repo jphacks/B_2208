@@ -5,7 +5,7 @@ import btnCancel from "../assets/img/btn_cancel.svg";
 import btnCamera from "../assets/img/btn_camera.svg";
 import btnGo from "../assets/img/btn_go.svg";
 
-const TakePic = () => {
+const TakePic = (props) => {
   const [isCaptureEnable, setCaptureEnable] = useState(true);
   const camera = useRef(null);
   const [url, setUrl] = useState(null);
@@ -30,6 +30,7 @@ const TakePic = () => {
             </div>
             <div className="capture-img">
               <img className="camera-area" src={url} alt='' />
+              <p>{props.setUrl(url)}</p>
               <Link className="go-area" to={`/step2/?maxCount=${maxCount}&selectCount=0&selectAns=0`}>
                 <p className="fs24 go-text">進める</p>
                 <img className="btn-go" src={btnGo} alt="" />
