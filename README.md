@@ -1,7 +1,4 @@
 # AI.pic
-
-![stables](https://user-images.githubusercontent.com/115523855/197341405-94ce8dae-f82b-4476-b6f2-a13692bcaec5.png)
-
 <a href="https://jp.freepik.com/free-photo/_13109580.htm#query=empty%20room%20interior&position=3&from_view=search&track=sph">著作者：vanitjan</a>／出典：Freepik
 
 ## 製品概要
