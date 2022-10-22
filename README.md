@@ -70,6 +70,8 @@ AI.picは部屋に合った(部屋要素)好みの絵(その人の好み)を部�
 - 選択する画像に画像生成AIに渡す英単語が紐づけられており、画像を選択するごとに利用者の好みがより深く反映されるようになっています。
 
 ![AI pic2](https://user-images.githubusercontent.com/115523855/197347196-faae8c70-671e-4a71-b1bf-bad8d4bd3098.gif)
+
+<img src="![AI pic2](https://user-images.githubusercontent.com/115523855/197347196-faae8c70-671e-4a71-b1bf-bad8d4bd3098.gif)" width="320ｐｘ">
 ## 開発技術
 ### 活用した技術
 #### API・データ
