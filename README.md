@@ -71,7 +71,7 @@ AI.picは部屋に合った(部屋要素)好みの絵(その人の好み)を部�
 
 <!-- ![AI pic2](https://user-images.githubusercontent.com/115523855/197347196-faae8c70-671e-4a71-b1bf-bad8d4bd3098.gif) -->
 
-<img src="https://user-images.githubusercontent.com/115523855/197347196-faae8c70-671e-4a71-b1bf-bad8d4bd3098.gif" width="50%" />
+<img src="https://user-images.githubusercontent.com/115523855/197347196-faae8c70-671e-4a71-b1bf-bad8d4bd3098.gif" width="30%" />
 
 ## 開発技術
 ### 活用した技術
