@@ -1,6 +1,8 @@
 # AI.pic
 
-[![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
+
+
+<a href="https://jp.freepik.com/free-photo/_13109580.htm#query=empty%20room%20interior&position=3&from_view=search&track=sph">著作者：vanitjan</a>／出典：Freepik
 
 ## 製品概要
 『AI.pic』は部屋の雰囲気にマッチした利用者好みの絵を部屋の写真を撮影・好みの絵を選択することで簡単に作成できるwebサービスです。
