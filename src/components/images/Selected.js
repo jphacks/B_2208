@@ -26,9 +26,9 @@ const SelectImgs = () => {
   const sel2 = parseInt(selectAns / 10) % 10 % 10;
   const sel3 = parseInt(selectAns) % 10 % 10 % 10;
   console.log(sel1, sel2, sel3);
-  // src1 = `subject1_${sel1}`;
-  // src2 = `subject2_${sel2}`;
-  // src3 = `subject3_${sel3}`;
+  src1 = `subject1_${sel1}`;
+  src2 = `subject2_${sel2}`;
+  src3 = `subject3_${sel3}`;
   return (
     <>
       <div className="selected-imgs">
