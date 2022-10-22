@@ -3,15 +3,9 @@
 [![IMAGE ALT TEXT HERE](https://jphacks.com/wp-content/uploads/2022/08/JPHACKS2022_ogp.jpg)](https://www.youtube.com/watch?v=LUPQFB4QyVo)
 
 ## 製品概要
-『AI.pic』は、部屋の雰囲気にマッチした利用者好みの絵を
-部屋の写真を撮影・好みの絵を選択することで簡単に作成できるwebサービスです。
-
-
-
+『AI.pic』は部屋の雰囲気にマッチした利用者好みの絵を部屋の写真を撮影・好みの絵を選択することで簡単に作成できるwebサービスです。
 
 製品ページ：　https://jphack.vercel.app/
-
-
 
 ### 背景(製品開発のきっかけ、課題等）
 コロナウイルスの影響で私たちは家で生活をすることが多くなりました。
