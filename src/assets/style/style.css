@@ -212,6 +212,17 @@ body {
   transform: rotate(10deg);
 }
 
+/* 生成画像 */
+
+.generate-area {
+  position: absolute;
+  top: calc(160px + 6px);
+  left: calc((100vw - 160px) / 2 + 6px);
+  width: 160px;
+  height: 113px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
 /* ボタン */
 
 .btn {
