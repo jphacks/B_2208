@@ -1,4 +1,7 @@
 # AI.pic
+
+
+![mock-up-poster-in-modern-dining-room-interior-design-with-white-empty-wall](https://user-images.githubusercontent.com/115523855/197341246-c5abbca6-6641-4759-aafe-107c5a3c035e.jpg)
 <a href="https://jp.freepik.com/free-photo/_13109580.htm#query=empty%20room%20interior&position=3&from_view=search&track=sph">著作者：vanitjan</a>／出典：Freepik
 
 ## 製品概要
