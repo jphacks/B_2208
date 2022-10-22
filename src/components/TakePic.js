@@ -18,7 +18,7 @@ const TakePic = (props) => {
     }
   }, [camera])
 
-  const maxCount = 5;
+  const maxCount = 4;
 
   return (
     <>

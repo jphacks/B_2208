@@ -178,6 +178,10 @@ body {
   height: 180px;
 }
 
+.item>img {
+  width: 100%;
+}
+
 .item:nth-child(2n+1) {
   margin-right: 24px;
 }
