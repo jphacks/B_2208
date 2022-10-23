@@ -74,11 +74,11 @@ AI.picは部屋に合った(部屋要素)好みの絵(その人の好み)を部�
 ## 開発技術
 ### 活用した技術
 #### API・データ
-* Stable Diffuision
+- Stable Diffuision
 
 #### フレームワーク・ライブラリ・モジュール
-*　React
-*　firebase 
+- React
+- firebase 
 
 ### 独自技術
 #### ハッカソンで開発した独自機能・技術
